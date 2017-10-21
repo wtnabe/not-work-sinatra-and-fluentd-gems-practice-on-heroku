@@ -3,7 +3,7 @@ require 'sinatra/reloader' if development?
 require 'fluent-logger'
 
 before do
-  @fluent = Fluent::Logger::FluentLogger.new('fluentd-lesson', host: '127.0.0.1', port: 24224)
+  @fluent = Fluent::Logger::FluentLogger.new('fluentd-lesson', socket_path: '/tmp/fluentd.socket')
 end
 
 get '/' do
