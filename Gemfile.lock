@@ -3,6 +3,8 @@ GEM
   specs:
     backports (3.10.3)
     cool.io (1.5.1)
+    fluent-logger (0.7.1)
+      msgpack (>= 1.0.0, < 2)
     fluentd (0.14.21)
       cool.io (>= 1.4.5, < 2.0.0)
       http_parser.rb (>= 0.5.1, < 0.7.0)
@@ -50,6 +52,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  fluent-logger
   fluentd
   sinatra
   sinatra-contrib
